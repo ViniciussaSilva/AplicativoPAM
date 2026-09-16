@@ -1,16 +1,26 @@
 package com.example.aplicativopam
 
+
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.aulaid)
 
-        setContentView(R.layout.activity_main)
+        val botao = findViewById<Button>(R.id.btnProxima)
+        val texto = findViewById<EditText>(R.id.edtValor)
 
+        botao.text = "Teste Botão"
+
+        botao.setOnClickListener {
+           botao.text = texto.text
+
+            }
+        }
     }
-}
+
