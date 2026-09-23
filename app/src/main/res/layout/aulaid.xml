@@ -4,17 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:id="@+id/edtAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a altura"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite p peso"
+        android:inputType="number"/>
+
     <Button
         android:id="@+id/btnProxima"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Proxima tela"/>
-
-    <EditText
-        android:id="@+id/edtValor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Digite um valor"
-        android:inputType="number"/>
+        android:text="CalcularIMC"/>
 
 </LinearLayout>
